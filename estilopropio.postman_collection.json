@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "f7b8a326-c567-47aa-af08-58194d6ac98a",
+		"name": "estilopropio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17816987",
+		"_collection_link": "https://crimson-comet-113056.postman.co/workspace/Nova~d6ffb846-ce5e-4ce1-b64c-c6ddead8f04c/collection/17816987-f7b8a326-c567-47aa-af08-58194d6ac98a?action=share&source=collection_link&creator=17816987"
+	},
+	"item": [
+		{
+			"name": "Crear cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"a@a.com\",\r\n    \"nombre\": \"Thalia\",\r\n    \"telefono\": \"35051895623\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/estilopropio/v1/cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "Crear cliente Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"a@a.com\",\r\n    \"nombre\": \"Thalio\",\r\n    \"telefono\": \"35051895625\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/estilopropio/v1/cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/estilopropio/v1/cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "Get cliente by correo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/estilopropio/v1/cliente/by-correo/edwardl@gmail.com"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cliente by correo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/estilopropio/v1/cliente/edwardl@gmail.com"
+			},
+			"response": []
+		},
+		{
+			"name": "Get cliente by telefono",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/estilopropio/v1/cliente/by-telefono/35051895625"
+			},
+			"response": []
+		}
+	]
+}
